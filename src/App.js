@@ -19,7 +19,7 @@ import React from 'react';
 function App() {
 
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path='*' element={<PageNotFound/>} />
@@ -30,7 +30,7 @@ function App() {
         <Route path='/loja' element={<Loja/>} /> */}
       </Routes>
       <Footer />
-    </Router>
+   </>
   );
 }
 
