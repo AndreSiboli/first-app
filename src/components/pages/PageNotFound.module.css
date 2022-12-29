@@ -1,0 +1,21 @@
+.nFContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.nFWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    text-align: center;
+}

@@ -1,13 +1,192 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*'Anton', sans-serif;*/
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  scroll-behavior: smooth;
 }
+
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+a{ 
+  color: white;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .03em;
+  font-weight: 100;
+}
+
+/*Menu*/
+
+.menuClosed{
+  flex: 1 1 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainLinks{
+  flex: 1 1 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.endContainer{
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.endContainer .socialMediaContainer{
+  display: flex;
+  gap: 10px;
+}
+
+.endContainer .socialMediaContainer a{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.endContainer .socialMediaContainer a *{
+  width: 18px;
+  height: 18px;
+}
+
+/*Hamburger */
+
+.icon{
+  position: fixed;
+  z-index: 4;
+  right: 3%;
+  width: 37px;
+  height: 44px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger{
+  top: 50%;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  transition: .5s;
+}
+
+.hamburger::before {
+  top: -12px;
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 4px;
+  background: white;
+  transition: .5s;
+}
+
+.hamburger::after {
+  top: 12px;
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 4px;
+  background: white;
+  transition: .5s;
+}
+
+.iconActive .hamburger{
+  background-color: transparent;
+}
+
+.iconActive .hamburger::after,
+.iconActive .hamburger::before{
+  background: black;
+}
+
+.iconActive .hamburger::after{
+  top: 0;
+  transform: rotate(225deg);
+}
+
+.iconActive .hamburger::before{
+  top: 0;
+  transform: rotate(-225deg);
+}
+
+@keyframes appear {
+  from{
+      transform: translateY(20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 800px){
+  .menuOpen{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: black;
+    padding: 5em 3em;
+    overflow-y: auto;
+  }
+
+  .menuOpen .mainLinks{
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menuOpen .mainLinks,
+  .menuOpen .endContainer{
+    display: flex;
+  }
+  
+  .menuOpen .mainLinks a,
+  .menuOpen .endContainer a{
+    color: black;
+    font-size: clamp(1.2em, 4.5vw + 1em, 3em);
+  }
+  
+  .menuOpen .endContainer{
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .menuOpen .endContainer .socialMediaContainer a{
+    color: black;
+  }
+
+  .icon{
+    display: block;
+  }
+
+  .mainLinks,
+  .endContainer{
+    display: none;
+  }
+}
+

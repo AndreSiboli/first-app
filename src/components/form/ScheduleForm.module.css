@@ -1,0 +1,37 @@
+.scheduleForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.allInput{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.inputContainer{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.inputWrapper, 
+.inputDateWrapper{
+    font-size: 0.9em;
+}
+
+.inputDateWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 70px;
+}

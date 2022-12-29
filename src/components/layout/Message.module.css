@@ -1,0 +1,19 @@
+.message{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    color: white;
+}
+
+.messageError{
+    background-color: #c81e1ed0;
+}
+
+.messageSucceful{
+    background-color: #0dee0d80;
+}

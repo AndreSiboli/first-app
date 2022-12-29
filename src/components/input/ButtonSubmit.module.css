@@ -1,0 +1,26 @@
+.buttonSubmit{
+    padding: 0.8em 1.8em;
+    border-radius: 2.5em;
+    border: 2px solid black;
+    background-color: transparent;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.buttonSubmitBlack:hover{
+    color: white;
+    background-color: black;
+}
+
+.buttonSubmitWhite{
+    color: white;
+    border-color: white;
+}
+
+.buttonSubmitWhite:hover{
+    background-color: white;
+    color: black;
+}

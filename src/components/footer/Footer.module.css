@@ -1,0 +1,123 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 80vh;
+    background-color: black;
+    color: white;
+    padding: 2em 2em;
+}
+
+.signUpContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6em;
+    margin-bottom: 4em;
+}
+
+.signUpContainer .signUpParagraph{
+    max-width: 500px;
+}
+
+.signUpContainer .signUpParagraph h2{
+    font-size: clamp(1.2em, 2.5vw + 0.9em, 3em);
+    margin-bottom: 0.4em;
+}
+
+.signUpContainer .signUpParagraph p{
+    font-size: clamp(.9em, 0.6vw + 0.6em, 1em);
+}
+
+.signUpContainer .signUpInputContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 600px;
+    gap: 0.9em;
+}
+
+.signUpInputContainer .signUpInput{
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.contactContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2em 0;
+    border-top: 1px solid white;
+}
+
+.contactContainer h3{
+    margin-bottom: .5em;
+}
+
+.contactContainer h2,
+.contactContainer h3{
+    font-size: clamp(1.2em, 2.4vw + 0.9em, 3em);
+}
+
+.contactContainer .contactWrapper{
+    display: flex;
+    gap: 25%;
+    width: 500px;
+}
+
+.contactContainer .supportContainer > .supportLinks{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+
+@media screen and (max-width:1040px){
+    .signUpContainer .signUpInputContainer{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width:768px){
+    .signUpContainer{
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .signUpContainer .signUpInputContainer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contactContainer{
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .contactContainer .contactWrapper{
+        width: 100%;
+        gap: 15%;
+        
+        justify-content: unset;
+    }
+
+    .contactContainer .contactLogoContainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contactContainer .contactWrapper{
+        width: 100%;
+        gap: 1.5em;
+        flex-direction: column;
+        
+    }
+}

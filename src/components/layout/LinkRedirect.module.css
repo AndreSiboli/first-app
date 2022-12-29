@@ -1,0 +1,22 @@
+.link{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+
+.link::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: .4s;
+    position: absolute;
+    left: 50%;
+}
+
+.link:hover::after{
+    width: 100%;
+    left: 0;
+}
