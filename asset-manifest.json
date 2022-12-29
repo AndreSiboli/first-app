@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/first-app/static/css/main.788a1c47.css",
+    "main.js": "/first-app/static/js/main.129787f4.js",
+    "static/media/mainMan.jpg": "/first-app/static/media/mainMan.a4e155b3c9ab116ff134.jpg",
+    "static/media/girlFighting.jpg": "/first-app/static/media/girlFighting.25d04b9bad3c3e82e21e.jpg",
+    "static/media/girlMMA.jpg": "/first-app/static/media/girlMMA.10203760c47540abbdf3.jpg",
+    "static/media/girlSuit.jpg": "/first-app/static/media/girlSuit.e15d249f046d8646804d.jpg",
+    "static/media/girlPose.jpg": "/first-app/static/media/girlPose.e6b5bc7807686e32d90f.jpg",
+    "static/media/girlRunning.jpg": "/first-app/static/media/girlRunning.67a3a20472296b65260e.jpg",
+    "static/media/girlRunning2.jpg": "/first-app/static/media/girlRunning2.1a0716d4e003611a9059.jpg",
+    "static/media/girlBoxe.jpg": "/first-app/static/media/girlBoxe.4edf06da35eb0d03b724.jpg",
+    "static/media/GRADIENT-DRIVE.jpg": "/first-app/static/media/GRADIENT-DRIVE.b7b291a32bec33faab78.jpg",
+    "index.html": "/first-app/index.html",
+    "main.788a1c47.css.map": "/first-app/static/css/main.788a1c47.css.map",
+    "main.129787f4.js.map": "/first-app/static/js/main.129787f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.788a1c47.css",
+    "static/js/main.129787f4.js"
+  ]
+}
