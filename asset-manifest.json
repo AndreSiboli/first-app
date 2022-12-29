@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/first-app/static/css/main.788a1c47.css",
-    "main.js": "/first-app/static/js/main.129787f4.js",
+    "main.js": "/first-app/static/js/main.d8305843.js",
     "static/media/mainMan.jpg": "/first-app/static/media/mainMan.a4e155b3c9ab116ff134.jpg",
     "static/media/girlFighting.jpg": "/first-app/static/media/girlFighting.25d04b9bad3c3e82e21e.jpg",
     "static/media/girlMMA.jpg": "/first-app/static/media/girlMMA.10203760c47540abbdf3.jpg",
@@ -13,10 +13,10 @@
     "static/media/GRADIENT-DRIVE.jpg": "/first-app/static/media/GRADIENT-DRIVE.b7b291a32bec33faab78.jpg",
     "index.html": "/first-app/index.html",
     "main.788a1c47.css.map": "/first-app/static/css/main.788a1c47.css.map",
-    "main.129787f4.js.map": "/first-app/static/js/main.129787f4.js.map"
+    "main.d8305843.js.map": "/first-app/static/js/main.d8305843.js.map"
   },
   "entrypoints": [
     "static/css/main.788a1c47.css",
-    "static/js/main.129787f4.js"
+    "static/js/main.d8305843.js"
   ]
 }
